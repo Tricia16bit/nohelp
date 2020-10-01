@@ -1,0 +1,219 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+#head{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    position: relative;
+    background-color: black;
+}
+#head .container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+#head .container img {
+    display:inline-block;
+    height: 100%;
+    width: 100%;
+}
+#head .container .head-img img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.2;
+    z-index: 1;
+}
+#head .container .nav-container ul{
+    list-style: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 25%;
+    left: 0%;
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
+}
+#head .nav-container .btn{
+        padding: 1rem 2.5rem;
+        margin: 1rem 0;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #eee;
+        font-size: 1.4rem;
+}
+#head .nav-container .btn:hover{
+    transform: translateY(-2px);
+    cursor: pointer;
+}
+#head .nav-container .btn:active{
+    transform: translateY(0);
+    box-shadow: none;
+}
+#fast .container{
+    display: inline-block;
+    border: 1px dotted black;
+    margin: 10px;
+    padding: 10px;
+}
+#fast .container h1{
+    margin: 1rem;
+    left: 50%;
+
+}
+#fast .container img {
+    height: 500px;
+    width: 400px;
+    margin: 2rem;
+    float: left;
+}
+#fast .container p{
+    letter-spacing: 1px;
+}
+#benefit{
+    margin: .5rem;
+    padding: .5rem;
+}
+#benefit .container p{
+    letter-spacing: 1px;
+}
+#benefit .container ul li{
+    letter-spacing: 1px;
+    font-weight: 900;
+}
+#learn-more a{
+    margin-left: 50%;
+    padding: 0;
+    font-size: 2rem;
+    font-family: helvetica;
+    text-decoration: none;
+    color: blue;
+    background: #fafafa;
+    border-radius: 10%;
+    
+}
+#learn-more a:hover{
+    box-shadow: 5px 5px 3px 3px rgba(189, 189, 189,.4);
+    display: inline;
+    position: relative;
+    border-bottom: 1px solid #777;
+    color: orange;
+    transition: 1s;
+}
+.card-wrapper{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+.card{
+    width: 32rem;
+    background-color: #ebeef8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+    box-shadow: .5rem .5rem 3rem rgba(0,0,0,0.2);
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+}
+
+.card .card-img{
+    width: 100%;
+    height: 26rem;
+    object-fit: cover;
+    -webkit-clip-path:polygon(0 0, 100% 0, 100% 44%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 44%, 0% 100%);
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+}
+.profile-img {
+    widows: 15rem;
+    height: 15rem;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: -11rem;
+    z-index: 999;
+    border: 1rem solid #ebeef8;
+}
+.card h1{
+    font-size: 2.5rem;
+    color: #333;
+    margin: 1.5rem 0;
+}
+.job-title{
+    color: #777;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.about{
+    font-size: 1.5rem;
+    margin: 1.5rem 0;
+    font-style: italic;
+    text-align: center;
+    color: #333;
+}
+
+.card .btn{
+    padding: 1rem 2.5rem;
+    background-color: #445ae3;
+    border-radius: 2rem;
+    margin: 1rem 0;
+    text-transform: uppercase;
+    color: #eee;
+    font-size: 1.4rem;
+    transition: all .5s;
+}
+
+.card .btn:hover{
+    transform: translateY(-2px);
+    box-shadow: .5rem .5rem 2rem rgba(0,0,0,.2);
+}
+.card .btn:active{
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+.social-media{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem 0;
+    margin-top: 1.5rem;
+    border-top: 1px solid rgba(0,0,0,.1);
+}
+
+.social-media i{
+    font-size: 3rem;
+    transition: color .5s;
+}
+
+.fa-facebook-square{
+    color: #3b5999;
+}
+.fa-twitter-square{
+    color: #55acee;
+}
+.fa-instagram{
+    color: #e6683c;
+}
+.fa-google-plus-square{
+    color: #dd4b39;
+}
+.fa-facebook-square:hover, 
+.fa-twitter-square:hover, 
+.fa-instagram:hover,
+.fa-google-plus-square:hover{
+    color: #45e19f;
+}
